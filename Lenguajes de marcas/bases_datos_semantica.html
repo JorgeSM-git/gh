@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura semántica HTML 5</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo">Introducción a las Bases de Datos</h1>
+        <nav>
+            <ul>
+                <li><a href="#id_CyT">Concepto y Tipos</a></li>
+                <li><a href="#id_EdD">Estructura de Datos</a></li>
+                <li><a href="#id_Re">Relaciones</a></li>
+                <li><a href="#id_RdI">Recursos de Interés</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="id_CyT">
+            <h2>Concepto y Tipos de Bases de Datos</h2>
+            <article>
+                <h3>Bases de Datos Relacionales (RDBMS)</h3>
+                <p>Las <b>Bases de Datos Relacionales</b> organizan la información en <b>tablas</b> compuestas por
+                    <b>filas
+                        (registros)</b> y <b>columnas (campos)</b>, lo que permite relacionar y consultar datos mediante
+                    el lenguaje <b>SQL</b>.
+                </p>
+                <p>Ejemplos populares de Sistemas Gestores de Bases de Datos (SGBD) relacionales incluyen:</p>
+                <ul>
+                    <li><b>MySQL</b></li>
+                    <li><b>PostgreSQL</b></li>
+                    <li><b>Oracle</b></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Bases de Datos No Relacionales (NoSQL)</h3>
+                <p>Las <b>Bases de Datos NoSQL</b> están diseñadas para gestionar grandes volúmenes de datos <b>no
+                        estructurados</b> o <b>semiestructurados</b>, ofreciendo alta escalabilidad y
+                    flexibilidad. A diferencia de las <b>relacionales</b>, no requieren un esquema rígido.
+                </p>
+                <p>Existen varios tipos de almacenamiento según el modelo de datos:</p>
+                <ul>
+                    <li><b>Orientado a documentos</b></li>
+                    <li><b>Clave-valor</b></li>
+                    <li><b>Grafos</b></li>
+                    <li><b>Columnares</b></li>
+                </ul>
+                <p>Ejemplos populares de bases de datos NoSQL:</p>
+                <ul>
+                    <li><b>MongoDB</b></li>
+                    <li><b>Redis</b></li>
+                    <li><b>Cassandra</b></li>
+                    <li><b>Neo4j</b></li>
+                </ul>
+            </article>
+        </section>
+        <section id="id_EdD">
+            <h2>Estructura de una Base de Datos Relacional</h2>
+            <article>
+                <h3>Componentes Fundamentales</h3>
+                <p>Para definir la estructura dentro de un modelo relacional se emplean los siguientes elementos:</p>
+                <ul>
+                    <li><b>Tablas (Entidades)</b>: Estructuras donde se organizan los datos.</li>
+                    <li><b>Campos (Atributos)</b>: Columnas que definen la tipología de información.</li>
+                    <li><b>Registros (Tuplas)</b>: Filas que contienen cada instancia concreta de datos.</li>
+                    <li><b>Claves primarias (Primary Key)</b>: Identificadores únicos de cada registro.</li>
+                </ul>
+            </article>
+        </section>
+        <section id="id_Re">
+            <h2>Cardinalidades y Claves Foráneas</h2>
+            <article>
+                <h3>Cardinalidades Fundamentales:</h3>
+                <ul>
+                    <li><b>Relación 1:1 (Uno a uno)</b>: Un registro de la tabla A se
+                        conecta con un solo registro de la
+                        Tabla B y viceversa. </li>
+                    <li><b>Relación 1:N (Uno a muchos)</b>: Un registro de la Tabla A se
+                        relaciona con varios registros de la
+                        Tabla B, pero cada registro de la Tabla B solo pertenece a un único registro de la Tabla A.</li>
+                    <li><b>Relación M:N (Muchos a muchos)</b>: Un registro de la Tabla A se
+                        relaciona con varios registros de la
+                        Tabla B, y a la vez, un registro de la Tabla B se relaciona con varios registros de la Tabla A,
+                        requiriendo una tabla intermedia.</li>
+                </ul>
+                <h4>Clave Foránea (Foreign Key)</h4>
+                <p>Para llevar a cabo estas relaciones, se emplea una <b>Clave Foránea (Foreign Key)</b>, que es un
+                    campo o conjunto de campos en una tabla que hace referencia a la <b>clave primaria (Primary
+                        Key)</b> de otra tabla garantizando la integridad referencial de los datos. </p>
+            </article>
+        </section>
+        <aside id="id_RdI">
+            <h3>Glosario de Términos</h3>
+            <dl>
+                <dt><b>&bull; SQL (Structured Query Language)</b></dt>
+                <dd> - Lenguaje estándar y declarativo para realizar consultas a una base de datos,
+                    donde se
+                    indica qué
+                    datos se quieren obtener y no cómo conseguirlos.</dd>
+                <dt><b>&bull; SGBD (Sistema Gestor de Base de Datos)</b></dt>
+                <dd> - Software diseñado para almacenar, gestionar, recuperar y
+                    proteger
+                    datos de manera eficiente,
+                    proporcionando herramientas para definir, manipular y controlar el acceso a los
+                    datos, garantizando
+                    su integridad y seguridad.
+                </dd>
+                <dt><b>&bull; Normalización</b></dt>
+                <dd> - Proceso de diseño de bases de datos que organiza los datos en estructuras de tablas
+                    específicas para ayudar a mejorar la integridad de los datos, prevenir anomalías de datos,
+                    minimizar la
+                    redundancia de datos y reforzarel rendimiento de las consultas.
+                </dd>
+            </dl>
+            <h4>Enlaces Recomendados</h4>
+            <ul>
+                <li><a href="https://dev.mysql.com/doc/" target="_blank">Documentación oficial de MySQL</a></li>
+                <li><a href="https://www.ibm.com/think/topics/database-normalization" target="_blank">Guía de
+                        Normalización de Bases de Datos de IBM</a></li>
+                <li><a href="https://docs.oracle.com/en/database/" target="_blank">Documentación oficial de bases de
+                        datos en Oracle</a>
+                </li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2026 Mi Página Web - Realizado por <b>Jorge Sánchez</b> - ASIR Curso 2026/2027</p>
+        <p><a href="#titulo">Volver arriba</a></p>
+    </footer>
+</body>
+
+</html
