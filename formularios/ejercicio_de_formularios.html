@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <h2>Formulario 1</h2>
+
+    <form>
+        <fieldset>
+            <legend><b>Completar</b></legend>
+            <label for="color-input">Elige un color: </label>
+            <input type="color" id="color-input" name="color-input"><br>
+            <textarea name="textarea" rows="5" cols="53" placeholder="Por favor, escriba aquí"></textarea><br>
+            <select name="lenguaje">
+                <option value="" selected disabled>Lenguaje</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="html">HTML</option>
+                <option value="visual_basic">Visual Basic</option>
+            </select><br>
+            <label>
+                <input type="checkbox" name="ciclo" value="cicloasir">ASIR
+                <input type="checkbox" name="ciclo" value="ciclodam">DAM
+                <input type="checkbox" name="ciclo" value="ciclodaw">DAW
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend><b>Rellene las opciones siguientes</b></legend>
+            <label for="date-input">Elija una fecha:</label>
+            <input type="date" id="date-input" name="date-input"><br>
+            <label for="file-input">Elija un fichero:</label>
+            <input type="file" id="file-input" name="file-input" multiple><br>
+            <label for="select-input">Elija una opción:</label>
+            <select id="select-input" name="ciclo">
+                <option value="" selected disabled>Cursos</option>
+                <option value="smir">SMIR</option>
+                <option value="asir">ASIR</option>
+                <option value="dam">DAM</option>
+                <option value="daw">DAW</option>
+            </select>
+        </fieldset>
+        <br>
+        <input type="reset" value="Borrar selección">
+    </form>
+
+    <h2>Formulario 2</h2>
+    <form>
+        <fieldset>
+            <legend><b>Rellenar</b></legend>
+            <span>Elige tu asignatura favorita:</span><br>
+            <label>
+                <input type="radio" name="asignatura" value="asignaturalengua"> Lengua
+            </label><br>
+            <label>
+                <input type="radio" name="asignatura" value="asignaturamatematicas"> Matemáticas
+            </label><br>
+            <label>
+                <input type="radio" name="asignatura" value="asignaturahistoria"> Historia
+            </label><br>
+            <label>
+                <input type="radio" name="asignatura" value="asignaturageografia"> Geografía
+            </label><br>
+            <span>Elige tu editor favorito:</span>
+            <label>
+                <input type="checkbox" name="editor" value="editornotepad">Notepad
+                <input type="checkbox" name="editor" value="editoremacs">Emacs
+                <input type="checkbox" name="editor" value="editorotro">Otro
+            </label><br>
+            <textarea name="textarea" rows="5" cols="59"
+                placeholder="Escriba aquí el por qué de su elección, por favor"></textarea><br>
+            <label for="select-input">Elija una opción:</label>
+            <select id="select-input" name="procesador">
+                <option value="" selected disabled>Procesador</option>
+                <option value="amd">AMD</option>
+                <option value="intel_i5">Intel i5</option>
+                <option value="intel_i7">Intel i7</option>
+            </select>
+        </fieldset>
+        <br>
+        <input type="reset" value="Borrar selección">
+    </form>
+
+    <h2>Formulario 3</h2>
+    <form>
+        <fieldset>
+            <legend><b>Rellenar</b></legend>
+            <span>Asignatura favorita:</span>
+            <label>
+                <input type="radio" name="asignatura" value="asignaturageografia"> Geografía
+                <input type="radio" name="asignatura" value="asignaturalengua"> Lengua
+                <input type="radio" name="asignatura" value="asignaturamatematicas"> Matemáticas
+                <input type="radio" name="asignatura" value="asignaturahistoria"> Historia
+            </label><br>
+            <label for="time-input">Elija una hora:</label>
+            <input type="time" id="time-input" name="time-input"> <br>
+            <span>¿Cuáles de estos idiomas hablas?</span><br>
+            <label>
+                <input type="checkbox" name="idioma" value="idiomaespanol">Español
+            </label><br>
+            <label>
+                <input type="checkbox" name="idioma" value="idiomaingles">Inglés
+            </label><br>
+            <label>
+                <input type="checkbox" name="idioma" value="idiomaaleman">Alemán
+            </label><br>
+            <label>
+                <input type="checkbox" name="idioma" value="idiomafrances">Francés
+            </label><br>
+            <label for="input-nombre">Nombre:</label>
+            <input type="text" id="input-nombre" name="nombre" placeholder="Escribe su nombre" required><br>
+            <label for="input-apellidos">Apellidos:</label>
+            <input type="text" id="input-apellidos" name="apellidos" placeholder="Escribe sus apellidos" required>
+        </fieldset>
+        <br>
+        <input type="reset" value="Borrar selección">
+    </form>
+
+
+</body>
+
+</html>
